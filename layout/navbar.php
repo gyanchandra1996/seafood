@@ -15,13 +15,28 @@
     background: rgb(51 33 29 / 55%) !important;
     z-index: 1;
 }
+
+.p-image{
+    min-height: 158px !important;
+    max-height: 158px !important;
+    
+    width: 100%;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 3px 10px;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
     </style>  
    
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.php" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">SEA FOOD</h1>
+                <h1 class="m-0 display-4 text-uppercase text-white">silveranchorintl</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -31,14 +46,7 @@
                     <a href="index.php" class="nav-item nav-link">Home</a>
                     <a href="about.php" class="nav-item nav-link">About Us</a>
                     <a href="products.php" class="nav-item nav-link">Products</a>
-                    <!-- <a href="menu.php" class="nav-item nav-link">Menu</a> -->
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.php" class="dropdown-item">Reservation</a>
-                            <a href="testimonial.php" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div> -->
+
                     <a href="carrier.php" class="nav-item nav-link ">Carrier</a>
                     <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
 

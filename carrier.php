@@ -26,6 +26,36 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="product/css/style.css">
+    <link rel="stylesheet" href="product/css/responsive.css">
+
+    <style>
+        
+    
+        h1 {
+            margin: 0;
+        }
+        .job-listings {
+            margin-top: 20px;
+        }
+        .job {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        /* .apply-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        } */
+    </style>    
 </head>
 
 <body>
@@ -49,37 +79,37 @@
     <!-- Page Header End -->
 
     <!-- Service Start -->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-2">
         <div class="container">
-            <div class="section-title">
+            <!-- <div class="section-title">
                 <h1 class="display-4">Carrier</h1>
-            </div>
+            </div>  -->
             <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service" src="newimages/blue-crab-4952613_640.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Fastest Door Delivery</h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service"  src="newimages/salmon-518032_640.jpg"  alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>No Chemical Added </h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-            
+            <section class="job-listings">
+            <h1>Careers at Our Kitchen Seafood Company</h1>
+            <p>Join our team and help us bring fresh seafood to the world!</p>
+            <div class="job">
+                <h3>Seafood Processor</h3>
+                <p>Location: Anytown, USA</p>
+                <p>Responsibilities include processing seafood, maintaining quality control, and ensuring a safe work environment.</p>
+                <a href="apply.html" class="apply-button btn btn-primary">Apply Now</a>
+            </div>
+
+            <div class="job">
+                <h3>Sales Associate</h3>
+                <p>Location: Remote</p>
+                <p>We are seeking a motivated sales associate to help expand our customer base and promote our products.</p>
+                <a href="apply.html" class="apply-button btn btn-primary">Apply Now</a>
+            </div>
+
+            <div class="job">
+                <h3>Quality Control Inspector</h3>
+                <p>Location: Coastal City, USA</p>
+                <p>Responsible for inspecting seafood quality, ensuring compliance with safety regulations, and reporting findings.</p>
+                <a href="apply.html" class="apply-button btn btn-primary">Apply Now</a>
+            </div>
+          </section>
+  
             </div>
         </div>
     </div>
