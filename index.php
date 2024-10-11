@@ -21,6 +21,9 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -52,13 +55,46 @@
     text-transform: uppercase !important;
 }
 .p-image{
-    -height: 158px !important;
+    height: 158px !important;
     max-height: 158px !important;
     
     width: 100%;
     
 }
 
+.mt-4, .my-4 {
+    margin-top: 7.1rem !important;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.collapse-icon {
+    margin-right: 10px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding: 11px;
+}
+
+#main_slider a.carousel-control-prev {
+    left: 17px;
+    top: 95px;
+}
+
+#main_slider a.carousel-control-next {
+    right: 20px;
+    top: 95px;
+    color: #fefefd;
+    background-color: #4a4949;
+}
+
+  
     </style>    
 
 
@@ -72,23 +108,17 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <div class="container-fluid p-0 mb-5 mt-4">
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="banner/fish-220011_1280.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="display-1 text-white m-0 text-uppercase">silveranchorintl</h1>
-                        <h2 class="text-white m-0">Fresh from the ocean to your plate—taste the difference with every bite!</h2>
-                    </div>
+                    <img class="w-100" src="newimages/products/sl2.webp" alt="Image">
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="banner/meal-3175540_1280.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="display-1 text-white m-0 ">silveranchorintl</h1>
-                        <h2 class="text-white m-0">Savor the ocean's bounty, delivered fresh to your door!</h2>
-                    </div>
+
+                 <div class="carousel-item ">
+                    <img class="w-100" src="newimages/products/sl3.webp" alt="Image">
                 </div>
+            
             </div>
             <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -102,91 +132,69 @@
 
 
 
-  <div class="container-fluid py-5">
+      <div class="container-fluid py-5">  
       <div class="container">
             <div class="row">
-               <h1 class="coffee_taital">OUR PRODUCTS</h1>
+               <h1 class="coffee_taital"> PRODUCTS</h1>
         
             </div>
          </div>
 
-         <div class="coffee_section_2">
-            <div id="main_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container-fluid">
+               <div class="container-fluid">
                         <div class="row">
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/crab.png"></div>
-                              <h3 class="types_text">CRABS</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                              
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/Fillets.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fillets
+
+                                    </h3>
+                                    <div id="demo" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
+                                    </div>
+                         
                            </div>
                     
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/fish.jpg"></div>
-                              <h3 class="types_text">FISH</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Fresh-Water-fishes.jpg"></div>
+
+                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo2">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fishes
+
+                                    </h3>
+                                    <div id="demo2" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+                         
+                             
                            </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="img/products/white-pomfret.png"></div>
-                              <h3 class="types_text">WHITE POMFRET</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/logster2.webp"></div>
-                              <h3 class="types_text">LOBSTER</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item ">
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img class="p-image" src="newimages/prawn.png"></div>
-                              <h3 class="types_text">PRAWN</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Shell-Fishes.jpg"></div>
+
+                            <h3 class="types_text" data-toggle="collapse" data-target="#demo3">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shell Fishes
+
+                            </h3>
+
+                             <div id="demo3" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
+                             </div>
+
                               
                            </div>
-                    
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/shrimp.jpg"></div>
-                              <h3 class="types_text">Shrimp</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/tuna.webp"></div>
-                              <h3 class="types_text">TUNA</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img  class="p-image" src="newimages/logster2.webp"></div>
-                              <h3 class="types_text">LOBSTER</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="products.php">Read More</a></div>
-                           </div>
+                        
                         </div>
-                     </div>
-                  </div>
-            
-               </div>
-               <a class="carousel-control-prev text-primary" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-arrow-left"></i>
-               </a>
-               <a class="carousel-control-next text-primary" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-arrow-right"></i>
-               </a>
-            </div>
-         </div>
+      </div>
+         
+
          </div>
 
       </div>
@@ -200,13 +208,17 @@
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
-                <h1 class="display-4">Serving Since 1990</h1>
+                <h1 class="display-4">Serving Since 2000</h1>
             </div>
             <div class="row">
                 <div class="col-lg-8 py-0 py-lg-5">
-                    <h1 class="mb-3">Our Vision</h1>
-                    <h5 class="mb-3">Connecting communities to the ocean's bounty through sustainable seafood practices for a brighter future.</h5>
-                    <p>
+
+                     <p>
+                
+                     <span class="elementor-drop-cap-letter">F</span>ounded by Mr. john B. in 2000, Trading LLC is a company dedicated to imports of frozen marine products from around the globe to cater to the U.A.E. market.
+                     </p>
+                     <p>
+                   
                     At [silveranchorintl], our vision is to redefine the seafood industry by prioritizing sustainability, quality, and community connection. We believe that seafood should not only be delicious but also responsibly sourced. Our commitment to sustainable fishing practices ensures that we protect ocean ecosystems for future generations while providing our customers with the freshest catches available.</p>
                     <p>We envision a world where seafood lovers can enjoy their favorite dishes knowing that every bite supports ethical practices. By collaborating with local fishermen and adhering to fair trade principles, Our goal is to educate consumers about the importance of sustainable choices, empowering them to make informed decisions that benefit both their health and the environment.</p>
                     <p>. Ultimately, we aspire to create a culinary experience that celebrates the richness of the ocean while fostering a deep respect for its resources. Together, we can enjoy the ocean's bounty while preserving it for generations to come.</p>
@@ -214,7 +226,7 @@
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="newimages/single.png" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="newimages/products/about-us-new.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             
@@ -225,31 +237,124 @@
 
 
 
+
+
  <!-- About Start -->
  <div class="container-fluid py-5">
-        <div class="container">
-        
+        <div class="">
+
+            <div class="container">
             <div class="row">
-                <div class="col-lg-8 py-0 py-lg-5">
-                    <h1 class="mb-3">Our Kitchen</h1>
-                    <h5 class="mb-3">Connecting communities to the ocean's bounty through sustainable seafood practices for a brighter future.</h5>
-                    <p>
-                    Welcome to Our Kitchen Seafood Company, where freshness meets flavor! We pride ourselves on delivering the finest quality seafood, sourced sustainably from the ocean's bounty. Our commitment to excellence starts with our carefully selected partners, ensuring that every catch is not only fresh but also responsibly harvested.
-
-</p><p>At Our Kitchen, we offer a diverse range of seafood options, from succulent shrimp and tender scallops to flaky white fish and flavorful shellfish. Whether you're a home cook or a professional chef, our products are designed to inspire your culinary creativity. We provide tips, recipes, and cooking techniques to help you make the most of our seafood, elevating your meals to new heights.</p>
-
-            
-                <a href="about.php" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Read More</a>
-                </div>
-                <div class="col-lg-4 py-5 py-lg-0" style="">
-                    <div class="position-relative h-100" style="margin-top: 61px;">
-                        <img  class="position-absolute w-100 h-100" src="newimages/seafood.avif" style="height: 61% !important">
-                    </div>
-                </div>
-            
+               <h1 class="coffee_taital">Our Kitechen</h1>
+        
             </div>
+         </div>
+
+         <div class="coffee_section_2">
+             <div class="row">
+                 <div class="col-sm-6">
+                 <div id="main_slider" class="carousel slide" data-ride="carousel">
+                 <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                       
+                     <div class="coffee_img"><img   src="newimages/products/Ready.jpg"></div>
+                             
+                        
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="container-fluid">
+                     <div class="coffee_img"><img  src="newimages/products/Redy2.jpg"></div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev text-primary" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next text-primary" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+
+                 </div>
+                 <div class="col-sm-6">
+                     <h1 class="text-justify">
+                     Ready Meals
+                     </h1>
+                     <p class="text-justify">
+                     The convenience of ready seafood meals allows you to enjoy a gourmet experience in the comfort of your home or on the go. Simply heat, serve, and savor! Many of these meals come with delicious accompaniments like savory sauces, fragrant rice, or vibrant vegetables, making it easy to create a complete and satisfying meal in minute                     </p>
+                     <p class="text-justify">
+                     Whether you’re looking for a quick lunch, a delightful dinner option, or a nutritious post-workout meal, Discover the ease and pleasure of ready seafood meals, where fresh flavors meet convenience, allowing you to indulge in a delicious seafood feast any day of the week!
+                     </p>
+
+                 </div>
+             </div>
+         </div>
+
+
+
+         <div class="coffee_section_2">
+             <div class="row">
+                
+
+
+                 <div class="col-sm-6">
+                     <h1 class="text-justify">
+                      Ready to Cook
+                     </h1>
+                     <p class="text-justify">
+                     Ready-to-cook food offers a perfect blend of convenience and culinary delight, making it an ideal choice for busy individuals and families.  allowing you to create delicious dishes with minimal effort.  vibrant salads, ready-to-cook options cater to a variety of tastes and dietary preferences.
+                     </p>
+
+                     <p class="text-justify">
+                     With detailed instructions provided, anyone can become a kitchen maestro in no time. Simply follow the step-by-step guide, and in less than 30 minutes, you can serve up a gourmet meal that feels homemade. The convenience of ready-to-cook meals means, and more time enjoying quality moments with your loved ones.
+                     </p>
+
+                 </div>
+
+                  <div class="col-sm-6">
+                 <div id="main_slider2" class="carousel slide" data-ride="carousel">
+                 <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                       
+                     <div class="coffee_img"><img   src="newimages/products/readytocook.jpg"></div>
+                             
+                        
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="container-fluid">
+                     <div class="coffee_img"><img  src="newimages/products/readycook2.jpg"></div>
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="container-fluid">
+                     <div class="coffee_img"><img  src="newimages/products/readycook3.jpg"></div>
+                     </div>
+                  </div>
+                 </div>
+                    <a class="carousel-control-prev text-primary" href="#main_slider2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a class="carousel-control-next text-primary" href="#main_slider2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                 </div>
+             </div>
+         </div>
+
+         </div>
+
+      </div>
+
+        
+           
         </div>
-    </div>
+</div>
     <!-- About End -->
 
         <!-- Testimonial Start -->
@@ -264,41 +369,41 @@
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
                         <div class="ml-3">
-                            <h4>Client Name</h4>
-                            <i>Profession</i>
+                            <h4>Juli</h4>
+                            <i>Doctor</i>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"I appreciate the variety on the menu. There’s something for everyone, and everything I’ve tried has been amazing."</p>
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
                         <div class="ml-3">
-                            <h4>Client Name</h4>
-                            <i>Profession</i>
+                            <h4>Virat</h4>
+                            <i>Engineer</i>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"I ordered the seafood platter, and it was a feast! Everything was fresh and delicious"</p>
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
                         <div class="ml-3">
-                            <h4>Client Name</h4>
-                            <i>Profession</i>
+                            <h4>Kate Winset</h4>
+                            <i>Software Engineer </i>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"I had the grilled salmon, and it was cooked to perfection. It’s my new favorite dish"</p>
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
                         <div class="ml-3">
-                            <h4>Client Name</h4>
+                            <h4>Kundan</h4>
                             <i>Profession</i>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                    <p class="m-0">"The flavors in the fish tacos were incredible. I’m definitely recommending this place to my friends!"</p>
                 </div>
             </div>
         </div>
@@ -308,8 +413,11 @@
 
 
 
+
+
     
      
+    
 
 
 

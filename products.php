@@ -109,179 +109,77 @@
 
  
     <!-- product Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-                        <div class="section-title">
-                            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Products</h4>
-                            <h1 class="display-4">Best Selling Products</h1>
-                        </div>
-            
-                          <div class="row">
-                           <div class="col-lg-3 col-md-6" >
-                            <div class="card">
-                                <img  class="card-img-top p-image" src="newimages/crab.png">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Crab</h3>
-                                        <p>Weight: 500gms</p>
-                                        <p>Health Benifits</p>
-                                        <ul>
-                                        <li>low in saturated fat</li>
-                                        <li>important in building and Maintainig muscles </li>
-                                        </ul>
+
+    
+    <div class="container-fluid py-5">  
+      <div class="container">
+            <div class="row">
+               <h1 class="coffee_taital"> PRODUCTS</h1>
+        
+            </div>
+         </div>
+
+               <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/Fillets.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fillets
+
+                                    </h3>
+                                    <div id="demo" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
                                     </div>
+                         
+                           </div>
+                    
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Fresh-Water-fishes.jpg"></div>
+
+                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo2">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fishes
+
+                                    </h3>
+                                    <div id="demo2" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+                         
+                             
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Shell-Fishes.jpg"></div>
+
+                            <h3 class="types_text" data-toggle="collapse" data-target="#demo3">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shell Fishes
+
+                            </h3>
+
+                             <div id="demo3" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
                              </div>
-                            
+
+                              
                            </div>
-
-                          
-                    
-                           <div class="col-lg-3 col-md-6">
-                                <div class="card">
-                                    <img  class="card-img-top p-image" src="newimages/fish.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">FISH</h3>
-                                            <p>Weight: 500gms</p>
-                                            <p>Health Benifits</p>
-                                            <ul>
-                                            <li>low in saturated fat</li>
-                                            <li>important in building and Maintainig muscles </li>
-                                            </ul>
-                                        </div>
-                                </div>
-                           </div>
-
-
-                           <div class="col-lg-3 col-md-6">
-
-                              <div class="card">
-                                    <img  class="card-img-top p-image" src="img/products/white-pomfret.png">
-                                        <div class="card-body">
-                                            <h3 class="card-title">POMFRET</h3>
-                                            <p>Weight: 500gms</p>
-                                            <p>Health Benifits</p>
-                                            <ul>
-                                            <li>low in saturated fat</li>
-                                            <li>important in building and Maintainig muscles </li>
-                                            </ul>
-                                        </div>
-                                </div>
-
-
-                           </div>
-
-
-                           <div class="col-lg-3 col-md-6">
-
                         
-                               <div class="card">
-                                    <img  class="card-img-top p-image" src="newimages/logster2.webp">
-                                        <div class="card-body">
-                                            <h3 class="card-title">LOBSTER</h3>
-                                            <p>Weight: 500gms</p>
-                                            <p>Health Benifits</p>
-                                            <ul>
-                                            <li>low in saturated fat</li>
-                                            <li>important in building and Maintainig muscles </li>
-                                            </ul>
-                                        </div>
-                                </div>
-
-
-
-
-                           </div>
-
-                          </div>
-
-
-
-                           <div class="row mt-2">
-                                <div class="col-lg-3 col-md-6">
-
-                            
-
-                                      <div class="card">
-                                        <img  class="card-img-top p-image" src="newimages/prawn.png">
-                                            <div class="card-body">
-                                                <h3 class="card-title">PRAWN</h3>
-                                                <p>Weight: 500gms</p>
-                                                <p>Health Benifits</p>
-                                                <ul>
-                                                <li>low in saturated fat</li>
-                                                <li>important in building and Maintainig muscles </li>
-                                                </ul>
-                                            </div>
-                                      </div>
-
-
-                                    
-                                </div>
-                    
-                                <div class="col-lg-3 col-md-6">
-
-                                     <div class="card">
-                                        <img  class="card-img-top p-image" src="newimages/shrimp.jpg">
-                                            <div class="card-body">
-                                                <h3 class="card-title">Shrimp</h3>
-                                                <p>Weight: 500gms</p>
-                                                <p>Health Benifits</p>
-                                                <ul>
-                                                <li>low in saturated fat</li>
-                                                <li>important in building and Maintainig muscles </li>
-                                                </ul>
-                                            </div>
-                                      </div>
-
-
-                            
-
-
-                                </div>
-
-
-                           <div class="col-lg-3 col-md-6">
-
-                                   <div class="card">
-                                        <img  class="card-img-top p-image" src="newimages/tuna.webp">
-                                            <div class="card-body">
-                                                <h3 class="card-title">Tuna</h3>
-                                                <p>Weight: 500gms</p>
-                                                <p>Health Benifits</p>
-                                                <ul>
-                                                <li>low in saturated fat</li>
-                                                <li>important in building and Maintainig muscles </li>
-                                                </ul>
-                                            </div>
-                                      </div>
-
-                             
-
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-
-                                <div class="card">
-                                        <img  class="card-img-top p-image" src="newimages/indainsalmon.webp">
-                                            <div class="card-body">
-                                                <h3 class="card-title ">Salmon</h3>
-                                                <p>Weight: 500gms</p>
-                                                <p>Health Benifits</p>
-                                                <ul>
-                                                <li>low in saturated fat</li>
-                                                <li>important in building and Maintainig muscles </li>
-                                                </ul>
-                                            </div>
-                                      </div>
-                             
-
-                           </div>
                         </div>
+      </div>
+         
 
-            
+         </div>
 
-            
-            </div> 
-        </div>
-    </div>
+      </div>
+
+   
+
     <!-- products End -->
 
 

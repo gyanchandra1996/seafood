@@ -9644,17 +9644,16 @@ h6,
   list-style-type: none;
 }
 
-.reservation,
-.page-header,
-.offer,
-.footer {
-  background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(../img/bg.jpg);
+
+
+
+.reservation, .page-header, .offer, .footer {
+  background: linear-gradient(rgba(51, 33, 29, 0.9), #111111), url(../img/bg.jpg);
   /* background: linear-gradient(rgb(51 33 29 / 69%), rgb(51 33 29 / 71%)), url(../img/bg.jpg); */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .btn-primary:hover {
   color: #212529;
@@ -9662,4 +9661,11 @@ h6,
   border-color: #3cd3d3c7;
 }
 
+.reservation, .page-header, .offer, .footer {
+    background: linear-gradient(#000, #111111), url(../img/bg.jpg);
+    /* background: linear-gradient(rgb(51 33 29 / 69%), rgb(51 33 29 / 71%)), url(../img/bg.jpg); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
