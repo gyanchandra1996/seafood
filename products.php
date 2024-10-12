@@ -70,11 +70,7 @@
     height: auto;
 }
 
-.types_text {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 .looking_text {
     text-align: center;
@@ -82,6 +78,12 @@
 }
 
 
+.types_text {
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 10px 0;
+    color:black;
+}
 
 
       </style>    
@@ -110,8 +112,8 @@
  
     <!-- product Start -->
 
-    
-    <div class="container-fluid py-5">  
+
+  <div class="container-fluid py-5">  
       <div class="container">
             <div class="row">
                <h1 class="coffee_taital"> PRODUCTS</h1>
@@ -120,13 +122,13 @@
          </div>
 
                <div class="container-fluid">
-                        <div class="row">
+                        <div class="row mb-4">
                            <div class="col-lg-4 col-md-6">
                                  <div class="coffee_img">
-                                  <img src="newimages/products/Fillets.jpg">
+                                  <img src="newimages/products/fillet.jpg">
                                  </div>
                                
-                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo">
+                                    <h3 class="types_text text-dark mb-3" data-toggle="collapse" data-target="#demo">
                                     <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fillets
 
                                     </h3>
@@ -134,13 +136,14 @@
                                      <h5>Basa</h5>
                                      <h5>Cream Dory</h5>
                                     </div>
+                                    <hr>
                          
                            </div>
                     
                            <div class="col-lg-4 col-md-6">
-                              <div class="coffee_img"><img src="newimages/products/Fresh-Water-fishes.jpg"></div>
+                              <div class="coffee_img"><img src="newimages/products/Fresh.jpg"></div>
 
-                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo2">
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo2">
                                     <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fishes
 
                                     </h3>
@@ -151,13 +154,13 @@
                                     <h5>Karfu</h5>
 
                                     </div>
-                         
+                                    <hr>
                              
                            </div>
                            <div class="col-lg-4 col-md-6">
-                              <div class="coffee_img"><img src="newimages/products/Shell-Fishes.jpg"></div>
+                              <div class="coffee_img"><img src="newimages/products/seawater.jpg"></div>
 
-                            <h3 class="types_text" data-toggle="collapse" data-target="#demo3">
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo3">
                                                         <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shell Fishes
 
                             </h3>
@@ -167,18 +170,79 @@
                                     <h5>Kalibaus</h5>
                              </div>
 
+                                <hr>
+                           </div>
+                        
+                        </div>
+
+
+                         <div class="row">
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/sea.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo4">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Sea Water Fishes
+
+                                    </h3>
+                                    <div id="demo4" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
+                                    </div>
+                                    <hr>
+                         
+                           </div>
+                    
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Shrimps.jpg"></div>
+
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo5">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shrimps
+
+                                    </h3>
+                                    <div id="demo5" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+
+                                      <hr>
+                         
+                             
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/crab.webp"></div>
+
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo6">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Crab Fishes
+
+                            </h3>
+
+                             <div id="demo6" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
+                             </div>
+                             <hr>
                               
                            </div>
                         
                         </div>
-      </div>
+
+
+
+                             
+
+
+          </div>
          
 
          </div>
 
       </div>
 
-   
 
     <!-- products End -->
 

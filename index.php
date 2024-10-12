@@ -33,66 +33,7 @@
       <link rel="stylesheet" href="product/css/responsive.css">
       
     <style>
-      .product{
-        width: 100% !important;
-       height: 110px !important;
-      }
-      .p-service{
-        height: 200px !important;
-      }
-      .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(51 33 29 / 55%) !important;
-    z-index: 1;
-}
-.display-1 {
-    font-size: 5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    text-transform: uppercase !important;
-}
-.p-image{
-    height: 158px !important;
-    max-height: 158px !important;
-    
-    width: 100%;
-    
-}
-
-.mt-4, .my-4 {
-    margin-top: 7.1rem !important;
-}
-
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.collapse-icon {
-    margin-right: 10px;
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-    padding: 11px;
-}
-
-#main_slider a.carousel-control-prev {
-    left: 17px;
-    top: 95px;
-}
-
-#main_slider a.carousel-control-next {
-    right: 20px;
-    top: 95px;
-    color: #fefefd;
-    background-color: #4a4949;
-}
+ 
 
   
     </style>    
@@ -141,13 +82,13 @@
          </div>
 
                <div class="container-fluid">
-                        <div class="row">
+                        <div class="row mb-4">
                            <div class="col-lg-4 col-md-6">
                                  <div class="coffee_img">
-                                  <img src="newimages/products/Fillets.jpg">
+                                  <img src="newimages/products/fillet.jpg">
                                  </div>
                                
-                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo">
+                                    <h3 class="types_text text-dark mb-3" data-toggle="collapse" data-target="#demo">
                                     <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fillets
 
                                     </h3>
@@ -155,13 +96,14 @@
                                      <h5>Basa</h5>
                                      <h5>Cream Dory</h5>
                                     </div>
+                                    <hr>
                          
                            </div>
                     
                            <div class="col-lg-4 col-md-6">
-                              <div class="coffee_img"><img src="newimages/products/Fresh-Water-fishes.jpg"></div>
+                              <div class="coffee_img"><img src="newimages/products/Fresh.jpg"></div>
 
-                                    <h3 class="types_text" data-toggle="collapse" data-target="#demo2">
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo2">
                                     <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fishes
 
                                     </h3>
@@ -172,13 +114,13 @@
                                     <h5>Karfu</h5>
 
                                     </div>
-                         
+                                    <hr>
                              
                            </div>
                            <div class="col-lg-4 col-md-6">
-                              <div class="coffee_img"><img src="newimages/products/Shell-Fishes.jpg"></div>
+                              <div class="coffee_img"><img src="newimages/products/seawater.jpg"></div>
 
-                            <h3 class="types_text" data-toggle="collapse" data-target="#demo3">
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo3">
                                                         <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shell Fishes
 
                             </h3>
@@ -188,11 +130,73 @@
                                     <h5>Kalibaus</h5>
                              </div>
 
+                                <hr>
+                           </div>
+                        
+                        </div>
+
+
+                         <div class="row">
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/sea.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo4">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Sea Water Fishes
+
+                                    </h3>
+                                    <div id="demo4" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
+                                    </div>
+                                    <hr>
+                         
+                           </div>
+                    
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Shrimps.jpg"></div>
+
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo5">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shrimps
+
+                                    </h3>
+                                    <div id="demo5" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+
+                                      <hr>
+                         
+                             
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/crab.webp"></div>
+
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo6">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Crab Fishes
+
+                            </h3>
+
+                             <div id="demo6" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
+                             </div>
+                             <hr>
                               
                            </div>
                         
                         </div>
-      </div>
+
+
+
+                             
+
+
+          </div>
          
 
          </div>
@@ -207,7 +211,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
+                <h4 class="text-dark text-uppercase" style="letter-spacing: 5px;">About Us</h4>
                 <h1 class="display-4">Serving Since 2000</h1>
             </div>
             <div class="row">
@@ -222,7 +226,7 @@
                     At [silveranchorintl], our vision is to redefine the seafood industry by prioritizing sustainability, quality, and community connection. We believe that seafood should not only be delicious but also responsibly sourced. Our commitment to sustainable fishing practices ensures that we protect ocean ecosystems for future generations while providing our customers with the freshest catches available.</p>
                     <p>We envision a world where seafood lovers can enjoy their favorite dishes knowing that every bite supports ethical practices. By collaborating with local fishermen and adhering to fair trade principles, Our goal is to educate consumers about the importance of sustainable choices, empowering them to make informed decisions that benefit both their health and the environment.</p>
                     <p>. Ultimately, we aspire to create a culinary experience that celebrates the richness of the ocean while fostering a deep respect for its resources. Together, we can enjoy the ocean's bounty while preserving it for generations to come.</p>
-                    <a href="about.php" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Read More</a>
+                    <a href="about.php" class="btn btn-primary text-white font-weight-bold py-2 px-4 mt-2">Read More</a>
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="">
                     <div class="position-relative h-100">
@@ -269,10 +273,10 @@
                      </div>
                   </div>
                </div>
-               <a class="carousel-control-prev text-primary" href="#main_slider" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
                <i class="fa fa-arrow-left"></i>
                </a>
-               <a class="carousel-control-next text-primary" href="#main_slider" role="button" data-slide="next">
+               <a class="carousel-control-next " href="#main_slider" role="button" data-slide="next">
                <i class="fa fa-arrow-right"></i>
                </a>
             </div>
@@ -335,10 +339,10 @@
                      </div>
                   </div>
                  </div>
-                    <a class="carousel-control-prev text-primary" href="#main_slider2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#main_slider2" role="button" data-slide="prev">
                     <i class="fa fa-arrow-left"></i>
                     </a>
-                    <a class="carousel-control-next text-primary" href="#main_slider2" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#main_slider2" role="button" data-slide="next">
                     <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -361,7 +365,7 @@
         <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                <h4 class="text-dark text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
                 <h1 class="display-4">Our Clients Say</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
