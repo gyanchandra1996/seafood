@@ -8,7 +8,7 @@
     <div class="container-fluid p-0 nav-bar">
     <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3 fixed-top">
         <a href="index.php" class="navbar-brand d-flex px-lg-4 m-0">
-           <img style="height: 76px;    border-radius: 64px;" src="newimages/products/logo.png"> 
+           <img style="height: 76px;    border-radius: 64px;" class="logo-hide" src="newimages/products/logo.png"> 
            <h1 class="m-0 display-4 text-uppercase text-white ml-2" id="logo">silveranchor</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">

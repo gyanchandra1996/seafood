@@ -222,3 +222,29 @@ background-color: #4a4949;
     background-color: #28a745 !important;
     border-color: #28a745;
 }
+
+
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .logo-hide{
+        display: none !important;
+    }
+  }
+  
+  /* Media Query for Tablets (Portrait) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+  
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
