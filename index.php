@@ -53,11 +53,11 @@
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="newimages/products/sl2.webp" alt="Image">
+                    <img class="w-100" src="newimages/products/sl3.webp" alt="Image">
                 </div>
 
                  <div class="carousel-item ">
-                    <img class="w-100" src="newimages/products/sl3.webp" alt="Image">
+                    <img class="w-100" src="newimages/products/sl2.webp" alt="Image">
                 </div>
             
             </div>
