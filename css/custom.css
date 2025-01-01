@@ -93,6 +93,20 @@ z-index: 1030;
 background-color: black !important;
 }
 
+/* .whatsapp-button {
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    z-index: 1000;
+    text-align: center;
+} */
 
 
 .whatsapp-button {
@@ -110,7 +124,6 @@ background-color: black !important;
     z-index: 1000;
     text-align: center;
 }
-
 .whatsapp-button2 {
     position: fixed;
     bottom: 10px;

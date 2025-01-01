@@ -25,7 +25,6 @@
                     <p>2.00 PM - 8.00 PM</p>
                 </div>
             </div>
-        
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
             <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">silveranchorintl.com</a>. All Rights Reserved.</a></p>
@@ -37,6 +36,7 @@
 
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 <!-- WhatsApp Button -->
     <a href="https://wa.me/8957058676" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
