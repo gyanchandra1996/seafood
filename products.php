@@ -13,7 +13,6 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
@@ -25,6 +24,69 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="product/css/style.css">
+      <link rel="stylesheet" href="product/css/responsive.css">
+
+      <style>
+     
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col-lg-3, .col-md-6 {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.coffee_img {
+    text-align: center;
+}
+
+.p-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.looking_text {
+    text-align: center;
+    color: #777;
+}
+
+
+.types_text {
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 10px 0;
+    color:black;
+}
+
+
+      </style>    
 </head>
 
 <body>
@@ -49,133 +111,139 @@
 
  
     <!-- product Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Products</h4>
-                <h1 class="display-4">Best Selling Products</h1>
-            </div>
+
+
+  <div class="container-fluid py-5">  
+      <div class="container">
             <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service" src="newimages/blue-crab-4952613_640.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4>Crab</h4>
-                            <p><span class="text-primary">Weight:<span> 500gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service"  src="newimages/salmon-518032_640.jpg"  alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4></i>Salmon </h4>
-                            <p><span class="text-primary">Weight:<span> 600gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
+               <h1 class="coffee_taital"> PRODUCTS</h1>
+        
             </div>
+         </div>
 
-            <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service" src="img/products/72192-01.jpg" alt="">
+               <div class="container-fluid">
+                        <div class="row mb-4">
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/fillet.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text text-dark mb-3" data-toggle="collapse" data-target="#demo">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fillets
+
+                                    </h3>
+                                    <div id="demo" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
+                                    </div>
+                                    <hr>
+                         
+                           </div>
+                    
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Fresh.jpg"></div>
+
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo2">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Fishes
+
+                                    </h3>
+                                    <div id="demo2" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+                                    <hr>
+                             
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/seawater.jpg"></div>
+
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo3">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shell Fishes
+
+                            </h3>
+
+                             <div id="demo3" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
+                             </div>
+
+                                <hr>
+                           </div>
+                        
                         </div>
-                        <div class="col-sm-7">
-                            <h4>Rohu</h4>
-                            <p><span class="text-primary">Weight:<span> 800gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service"  src="img/products/indiansalmon.jpg"  alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4></i>Indian Salmon </h4>
-                            <p><span class="text-primary">Weight:<span> 600gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
 
 
-                <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service" src="img/products/red-snapper_big.jpeg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4>Red Snapper</h4>
-                            <p><span class="text-primary">Weight:<span> 500gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0 p-service"  src="img/products/white-pomfret.png"  alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4></i>White Pomfret  </h4>
-                            <p><span class="text-primary">Weight:<span> 600gms</p>
-                            <p>Health Benifits</p>
-                            <ul class="m-0">
-                            <li>low in saturated fat</li>
-                            <li>Good Source of vitamin c</li>
-                            <li>important in building and Maintainig muscles </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
+                         <div class="row">
+                           <div class="col-lg-4 col-md-6">
+                                 <div class="coffee_img">
+                                  <img src="newimages/products/sea.jpg">
+                                 </div>
+                               
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo4">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Sea Water Fishes
 
-            
-        </div>
-    </div>
+                                    </h3>
+                                    <div id="demo4" class="collapse">
+                                     <h5>Basa</h5>
+                                     <h5>Cream Dory</h5>
+                                    </div>
+                                    <hr>
+                         
+                           </div>
+                    
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/Shrimps.jpg"></div>
+
+                                    <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo5">
+                                    <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Shrimps
+
+                                    </h3>
+                                    <div id="demo5" class="collapse">
+                                    <h5>Fish Egg</h5>
+                                    <h5>Kalibaus</h5>
+                                    <h5>Kangla</h5>
+                                    <h5>Karfu</h5>
+
+                                    </div>
+
+                                      <hr>
+                         
+                             
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="coffee_img"><img src="newimages/products/crab.webp"></div>
+
+                            <h3 class="types_text text-dark" data-toggle="collapse" data-target="#demo6">
+                                                        <span class="collapse-icon" onclick="toggleIcon(this)"><i class="fa fa-caret-right"></i></span> Crab Fishes
+
+                            </h3>
+
+                             <div id="demo6" class="collapse">
+                                    <h5>Crab</h5>
+                                    <h5>Kalibaus</h5>
+                             </div>
+                             <hr>
+                              
+                           </div>
+                        
+                        </div>
+
+
+
+                             
+
+
+          </div>
+         
+
+         </div>
+
+      </div>
+
+
     <!-- products End -->
 
 

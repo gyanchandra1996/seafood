@@ -23,6 +23,9 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="product/css/style.css">
+    <link rel="stylesheet" href="product/css/responsive.css">
 </head>
 
 <body>
@@ -32,11 +35,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Contact</h1>
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Contact Us</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Contact</p>
+                <p class="m-0 text-white">Contact Us</p>
             </div>
         </div>
     </div>
@@ -47,7 +50,7 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
+                <h4 class="text-dark text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
                 <h1 class="display-4">GET IN TOUCH WITH US</h1>
             </div>
             <div class="row px-3 pb-2">
@@ -65,7 +68,7 @@
                 <div class="col-sm-4 text-center mb-3">
                     <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
                     <h4 class="font-weight-bold">Email</h4>
-                    <p>info@example.com</p>
+                    <p>fragiseullograu-3894@yopmail.com</p>
                 </div>
             </div>
             <div class="row">
@@ -111,4 +114,75 @@
     </div>
     <!-- Contact End -->
 
+  
+
     <?php require_once('layout/footer.php');?>
+
+     <script> 
+        
+        $(function () {
+        
+        $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+            preventSubmit: true,
+            submitError: function ($form, event, errors) {
+            },
+            submitSuccess: function ($form, event) {
+                event.preventDefault();
+                var name = $("input#name").val();
+                var email = $("input#email").val();
+                var subject = $("input#subject").val();
+                var message = $("textarea#message").val();
+        
+                $this = $("#sendMessageButton");
+                $this.prop("disabled", true);
+        
+                $.ajax({
+                    url: "sendmail.php",
+                    type: "POST",
+                    data: {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message
+                    },
+                    cache: false,
+                    success: function () {
+                        $('#success').html("<div class='alert alert-success'>");
+                        $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                                .append("</button>");
+                        $('#success > .alert-success')
+                                .append("<strong>Your message has been sent. </strong>");
+                        $('#success > .alert-success')
+                                .append('</div>');
+                        $('#contactForm').trigger("reset");
+                    },
+                    error: function () {
+                        $('#success').html("<div class='alert alert-danger'>");
+                        $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                                .append("</button>");
+                        $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
+                        $('#success > .alert-danger').append('</div>');
+                        $('#contactForm').trigger("reset");
+                    },
+                    complete: function () {
+                        setTimeout(function () {
+                            $this.prop("disabled", false);
+                        }, 1000);
+                    }
+                });
+            },
+            filter: function () {
+                return $(this).is(":visible");
+            },
+        });
+        
+        $("a[data-toggle=\"tab\"]").click(function (e) {
+            e.preventDefault();
+            $(this).tab("show");
+        });
+        });
+        
+        $('#name').focus(function () {
+        $('#success').html('');
+        });
+            </script>  
